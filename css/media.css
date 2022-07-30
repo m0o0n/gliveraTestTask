@@ -1,0 +1,51 @@
+@media screen and (max-width: 1240px) {
+  .messages {
+    width: 65%;
+  }
+  .sidebar {
+    width: 30%;
+  }
+  .messages-box__message {
+    width: 30%;
+    flex-grow: unset;
+  }
+  .messages-box__user {
+    width: 25%;
+    margin-right: 5px;
+  }
+  .messages-box__time-date {
+    width: 20%;
+    justify-content: end;
+  }
+  .messages-box__date {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .messages-box__message {
+    margin-right: 7px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .messages-box__message {
+    margin-right: 7px;
+  }
+  .sidebar {
+    position: absolute;
+    width: 50%;
+    left: 0px;
+    display: none;
+    z-index: 999;
+  }
+
+  .sidebar__exit {
+    display: block;
+  }
+  .messages {
+    width: 100%;
+  }
+  header.messages__header div.messages-header__bar {
+    display: flex;
+  }
+}

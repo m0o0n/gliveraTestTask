@@ -20,6 +20,17 @@ main {
   width: 20%;
 }
 
+.sidebar__exit {
+  position: absolute;
+  color: white;
+  display: none;
+  font-size: 22px;
+  right: 15px;
+  top: 15px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
 .sidebar--image_container {
   position: relative;
   height: 300px;
@@ -138,6 +149,19 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+header.messages__header div.messages-header__bar {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.media_menu {
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
 }
 
 .messages__header div p {

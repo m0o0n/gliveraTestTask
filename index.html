@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <main>
-      <aside class="sidebar">
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar__exit" id="sidebar__exit">
+          <i class="fas fa-times"></i>
+        </div>
         <div class="sidebar--image_container">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +61,9 @@
 
       <aside class="messages">
         <header class="messages__header">
+          <div class="messages-header__bar">
+            <i id="media_menu" class="fas fa-bars media_menu"></i>
+          </div>
           <div class="messages-header__tools">
             <p class="messages-tools--delete">Удалить</p>
             <p class="messages-tools--add">Добавить в архив</p>
@@ -192,5 +203,6 @@
     </main>
 
     <footer></footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
