@@ -170,34 +170,61 @@ main {
   overflow: visible;
   white-space: nowrap;
   max-width: 48px;
-  box-sizing: border-box;
+  transition: all 0.5s linear;
 }
 
 .messages-tools--delete:hover {
   font-weight: 600;
+  color: #ff0202;
 }
 
 .messages-tools--add {
   color: #ffffff;
+  white-space: nowrap;
+  max-width: 105px;
+  transition: all 0.5s linear;
+}
+
+.messages-tools--add:hover {
+  font-weight: 600;
 }
 
 .messages-tools--unread {
   color: #db9351;
+  max-width: 96px;
+  transition: all 0.5s linear;
+}
+
+.messages-tools--unread:hover {
+  font-weight: 600;
 }
 
 .messages-tools--archive {
   color: #959595;
+  max-width: 39px;
+  transition: all 0.5s linear;
+}
+
+.messages-tools--archive:hover {
+  font-weight: 600;
+  color: #ffffff;
 }
 
 div.messages-header__search p.messages-tools--search {
   color: #db9351;
   position: relative;
   width: 170px;
+  max-width: 170px;
   display: flex;
   padding-right: 10px;
   box-sizing: border-box;
   justify-content: end;
   border: 1px solid #db9351;
+  transition: all 0.5s linear;
+}
+
+.messages-tools--search:hover {
+  font-weight: 600;
 }
 .messages-box {
   position: relative;
@@ -257,6 +284,7 @@ div.messages-header__search p.messages-tools--search {
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  flex-grow: 1;
 }
 
 .messages-box__user-name {
@@ -266,6 +294,14 @@ div.messages-header__search p.messages-tools--search {
   color: #ffffff;
   margin-right: 20px;
   cursor: pointer;
+  width: 50%;
+}
+
+.messages-box__user-name p {
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .messages-box__message {
@@ -274,8 +310,8 @@ div.messages-header__search p.messages-tools--search {
   justify-content: center;
   font-size: 16px;
   color: #959595;
-  flex-grow: 1;
-  width: 32%;
+  flex-grow: 2;
+  width: 44%;
 }
 .messages-box__message::after {
   content: "";
