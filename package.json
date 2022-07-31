@@ -1,0 +1,24 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m0o0n/gliveraTestTask.git"
+  },
+  "author": "Vlad Shtrikun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m0o0n/gliveraTestTask/issues"
+  },
+  "homepage": "https://github.com/m0o0n/gliveraTestTask#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-cssfont64": "^0.0.1"
+  }
+}
